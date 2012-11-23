@@ -5,7 +5,7 @@
  * Updated at: 2012-11-23 15:06:06 +0100
  *
  * Author: @ivow
- * Version: 1.0.0
+ * Version: 1.0.1
  *
  */
 
