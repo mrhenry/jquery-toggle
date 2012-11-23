@@ -2,7 +2,7 @@
  * jquery-toggle
  *
  * Created at: 2012-11-23
- * Updated at: 2012-11-23 15:06:06 +0100
+ * Updated at: 2012-11-23 15:08:20 +0100
  *
  * Author: @ivow
  * Version: 1.0.1
