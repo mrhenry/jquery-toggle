@@ -3,10 +3,10 @@
  jquery-toggle
 
  Created at: 2012-11-23
- Updated at: 2012-11-23 13:59:01 +0100
+ Updated at: 2012-11-23 14:13:50 +0100
 
  Author: @ivow
- Version: 0.0.0
+ Version: 1.0.0
 
 */
 (function(d){function e(a,c){var b=d(a);this.element=a;this.options=d.extend({},c,g);this.$btns=b.find(this.options.btn_class);this.init()}var g={event:"click",speed:300,btn_class:".toggle-btn"};e.prototype.init=function(){var a=this,c=d(a.element);a.$btns.each(function(){a.setState(this)});c.on(a.options.event,a.options.btn_class,function(b){b.preventDefault();a.setState(this,!0,a.options.speed)})};e.prototype.setState=function(a,c,b){var f=d(this.element),a=d(a).data("toggle-target"),f=f.find(a),
