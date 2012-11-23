@@ -2,10 +2,10 @@
  * jquery-toggle
  *
  * Created at: 2012-11-23
- * Updated at: 2012-11-23 14:13:50 +0100
+ * Updated at: 2012-11-23 15:08:20 +0100
  *
  * Author: @ivow
- * Version: 1.0.0
+ * Version: 1.0.1
  *
  */
 
@@ -60,7 +60,9 @@
     if ( (state === 'open' && toggle) || (state === 'closed' && !toggle) ) {
       $target
         .data('toggle-state', 'closed')
-        .stop(true, true).slideUp( speed );
+        .stop(true, true).slideUp( speed, function(){
+          $(this).hide();
+        });
 
       _this.$btns.filter('[data-toggle-target="' + target_selector + '"]')
         .removeClass('open')
