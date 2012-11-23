@@ -11,8 +11,45 @@
     google.load("jquery", "1");
   </script>
   <script src="jquery-toggle-min.js"></script>
+  <script>
+    $(function() {
+      $('section').toggle();
+    });
+  </script>
+
+  <style>
+    section {
+      border: 1px solid gray;
+      padding: 20px;
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
+  <section>
+    <header>
+      <h1>header title</h1>
+      <span data-toggle-target="#toggle-1" class="toggle-btn">toggle</span>
+      <span data-toggle-target="#toggle-1" class="toggle-btn">toggle</span>
+    </header>
+    <div id="toggle-1" data-toggle-state="open">
+      <span data-toggle-target="#toggle-1" class="toggle-btn">toggle</span>
+      Mollit food truck thundercats, odio sustainable jean shorts do farm-to-table brunch tempor craft beer. Twee semiotics skateboard, reprehenderit ennui consequat tattooed nulla pork belly. In adipisicing sapiente craft beer single-origin coffee incididunt. Qui aute leggings, messenger bag aesthetic 8-bit sartorial lo-fi sriracha nisi trust fund small batch food truck hoodie fugiat. Semiotics farm-to-table american apparel reprehenderit, bespoke fanny pack cillum assumenda locavore iphone banh mi excepteur forage mumblecore. Eu sustainable excepteur chambray chillwave. Four loko pickled esse mixtape synth mcsweeney's beard.
+    </div>
+  </section>
+
+  <section>
+    <div>
+      header title
+      <span data-toggle-target="#toggle-2" class="toggle-btn">toggle</span>
+    </div>
+    <div>
+      Mollit food truck thundercats, odio sustainable jean shorts do farm-to-table brunch tempor craft beer. Twee semiotics skateboard, reprehenderit ennui consequat tattooed nulla pork belly. In adipisicing sapiente craft beer single-origin coffee incididunt. Qui aute leggings, messenger bag aesthetic 8-bit sartorial lo-fi sriracha nisi trust fund small batch food truck hoodie fugiat. Semiotics farm-to-table american apparel reprehenderit, bespoke fanny pack cillum assumenda locavore iphone banh mi excepteur forage mumblecore. Eu sustainable excepteur chambray chillwave. Four loko pickled esse mixtape synth mcsweeney's beard.
+      <blockquote id="toggle-2" data-toggle-state="closed">
+         <p>Mollit food truck thundercats, odio sustainable jean shorts do farm-to-table brunch tempor craft beer. Twee semiotics skateboard, reprehenderit ennui consequat tattooed nulla pork belly. In adipisicing sapiente craft beer single-origin coffee incididunt. Qui aute leggings, messenger bag aesthetic 8-bit sartorial lo-fi sriracha nisi trust fund small batch food truck hoodie fugiat. Semiotics farm-to-table american apparel reprehenderit, bespoke fanny pack cillum assumenda locavore iphone banh mi excepteur forage mumblecore. Eu sustainable excepteur chambray chillwave. Four loko pickled esse mixtape synth mcsweeney's beard.</p>
+       </blockquote>
+    </div>
+  </section>
 
 </body>
 </html>
