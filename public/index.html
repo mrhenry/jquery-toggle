@@ -13,12 +13,12 @@
   <script src="jquery-toggle-min.js"></script>
   <script>
     $(function() {
-      $('section').toggle();
+      $('.section').toggle();
     });
   </script>
 
   <style>
-    section {
+    .section {
       border: 1px solid gray;
       padding: 20px;
       margin: 10px;
@@ -26,19 +26,19 @@
   </style>
 </head>
 <body>
-  <section>
-    <header>
+  <div class="section">
+    <div class="header">
       <h1>header title</h1>
       <span data-toggle-target="#toggle-1" class="toggle-btn">toggle</span>
       <span data-toggle-target="#toggle-1" class="toggle-btn">toggle</span>
-    </header>
+    </div>
     <div id="toggle-1" data-toggle-state="open">
       <span data-toggle-target="#toggle-1" class="toggle-btn">toggle</span>
       Mollit food truck thundercats, odio sustainable jean shorts do farm-to-table brunch tempor craft beer. Twee semiotics skateboard, reprehenderit ennui consequat tattooed nulla pork belly. In adipisicing sapiente craft beer single-origin coffee incididunt. Qui aute leggings, messenger bag aesthetic 8-bit sartorial lo-fi sriracha nisi trust fund small batch food truck hoodie fugiat. Semiotics farm-to-table american apparel reprehenderit, bespoke fanny pack cillum assumenda locavore iphone banh mi excepteur forage mumblecore. Eu sustainable excepteur chambray chillwave. Four loko pickled esse mixtape synth mcsweeney's beard.
     </div>
-  </section>
+  </div>
 
-  <section>
+  <div class="section">
     <div>
       header title
       <span data-toggle-target="#toggle-2" class="toggle-btn">toggle</span>
@@ -49,7 +49,7 @@
          <p>Mollit food truck thundercats, odio sustainable jean shorts do farm-to-table brunch tempor craft beer. Twee semiotics skateboard, reprehenderit ennui consequat tattooed nulla pork belly. In adipisicing sapiente craft beer single-origin coffee incididunt. Qui aute leggings, messenger bag aesthetic 8-bit sartorial lo-fi sriracha nisi trust fund small batch food truck hoodie fugiat. Semiotics farm-to-table american apparel reprehenderit, bespoke fanny pack cillum assumenda locavore iphone banh mi excepteur forage mumblecore. Eu sustainable excepteur chambray chillwave. Four loko pickled esse mixtape synth mcsweeney's beard.</p>
        </blockquote>
     </div>
-  </section>
+  </div>
 
 </body>
 </html>
