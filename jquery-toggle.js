@@ -2,9 +2,9 @@
  * jquery-toggle
  *
  * Created at: 2012-11-23
- * Updated at: 2012-11-23 15:08:20 +0100
+ * Updated at: 2012-11-26 15:57:10 +0100
  *
- * Author: @ivow
+ * Author: Yves Van Broekhoven
  * Version: 1.0.1
  *
  */
@@ -14,7 +14,7 @@
 (function($) {
   "use strict";
 
-  var plugin_name = "jquery-toggle",
+  var plugin_name = "jqueryToggle",
       defaults    = {
         event:      'click',
         speed:      300,
@@ -73,13 +73,16 @@
         .data('toggle-state', 'open')
         .stop(true, true).slideDown( speed );
 
-      _this.$btns.filter('[data-toggle-target="' + target_selector + '"]')        .removeClass('closed')
+      _this.$btns.filter('[data-toggle-target="' + target_selector + '"]')
+        .removeClass('closed')
         .addClass('open');
 
     }
+
+    $(window).trigger('toggles', [target_selector, $target.data('toggle-state')] );
   };
 
-  $.fn.toggle = function(options) {
+  $.fn.toggles = function(options) {
     return this.each( function() {
       $(this).data( plugin_name, new Toggle(this, options) );
     });
