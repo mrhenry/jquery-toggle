@@ -55,14 +55,16 @@
 
   <script>
     $(function() {
-      $(window).on('toggles', function(event, selector, state) {
+      // Catch toggle events and write to our terminal
+      $(window).on('toggles.#toggle-1 toggles.#toggle-2', function(event, state) {
         var $line = $('<div></div>');
 
         $line
-          .text( 'selector: ' + selector + ' - state: ' + state)
+          .text( 'selector: ' + event.namespace + ' - state: ' + state)
           .prependTo( '.terminal' );
       });
 
+      // Togglify .section elements
       $('.section').toggles();
     });
   </script>
