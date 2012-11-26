@@ -3,7 +3,7 @@
  jquery-toggle
 
  Created at: 2012-11-23
- Updated at: 2012-11-26 16:12:55 +0100
+ Updated at: 2012-11-26 16:18:46 +0100
 
  Author: Yves Van Broekhoven
  Version: 1.1.0
