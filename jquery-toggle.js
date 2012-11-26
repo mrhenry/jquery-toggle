@@ -26,7 +26,7 @@
     this.element          = element;
     this.options          = $.extend({}, options, defaults);
     this.target_selector  = $this.data('toggle-target');
-    this.$similar         = $('*[data-toggle-target=' + this.target_selector + ']');
+    this.$similar         = $('*[data-toggle-target="' + this.target_selector + '"]');
 
     this.init();
   }
@@ -75,7 +75,7 @@
 
     }
 
-    console.log( 'toggles.' + _this.target_selector );
+    //console.log( 'toggles.' + _this.target_selector );
     $(window).trigger('toggles.' + _this.target_selector, [$target.data('toggle-state')] );
   };
 
