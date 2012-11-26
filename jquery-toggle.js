@@ -2,10 +2,10 @@
  * jquery-toggle
  *
  * Created at: 2012-11-23
- * Updated at: 2012-11-26 15:57:10 +0100
+ * Updated at: 2012-11-26 16:18:46 +0100
  *
  * Author: Yves Van Broekhoven
- * Version: 1.1.0
+ * Version: 1.1.1
  *
  */
 
@@ -79,7 +79,7 @@
 
     }
 
-    $(window).trigger('toggles', [target_selector, $target.data('toggle-state')] );
+    $(window).trigger('toggles.' + target_selector, [$target.data('toggle-state')] );
   };
 
   $.fn.toggles = function(options) {
